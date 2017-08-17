@@ -34,7 +34,7 @@
     </div>
 
     <div class="slide-col">
-      <div v-if="value < 12" class="price-tag">${{ getPrice() }}<span class="month">/MO</span></div>
+      <div v-if="value < 12" class="price-tag">${{ getPrice }}<span class="month">/MO</span></div>
       <div v-else>
         <a id="quote-link" href="#">Get a Quote</a>
       </div>
@@ -81,7 +81,9 @@ export default {
   methods: {
     updatePrice: function(val) {
       this.price = 50 * this.gigs[val];
-    },
+    }
+  },
+  computed: {
     getPrice: function() {
       let p = this.price - 1;
       return p.toLocaleString();
