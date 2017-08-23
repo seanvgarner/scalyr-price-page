@@ -45,6 +45,7 @@
 
 <script>
 import VueSlider from 'vue-slider-component';
+import { bus }  from '../main';
 
 export default {
   name: 'slider',
@@ -81,6 +82,7 @@ export default {
   methods: {
     updatePrice: function(val) {
       this.price = 50 * this.gigs[val];
+      bus.$emit('updateGigs', this.gigs[val]);
     }
   },
   computed: {

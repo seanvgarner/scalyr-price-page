@@ -3,7 +3,7 @@
     <header-menu></header-menu>
     <section id="title-hero">
       <div class="container">
-        <h1>Pricing & Plans for Everyone</h1>
+        <h1>Pricing &amp; Plans for Everyone</h1>
         <h3>No credit card required to give Scalyr a try, because we know you'll love it.</h3>
       </div>
     </section>
@@ -19,7 +19,7 @@
           <li>✓ Log Graphs</li>
           <li>✓ Server Monitoring</li>
           <li>✓ Custom Dashboards</li>
-          <li>✓ Log Search & Analysis</li>
+          <li>✓ Log Search &amp; Analysis</li>
         </ul>
         <ul>
           <li>✓ Custom Alerts</li>
@@ -30,18 +30,21 @@
         </ul>
       </div>
     </footer>
+    <demo-form></demo-form>
   </div>
 </template>
 
 <script>
 import Slider from './components/Slider'
 import HeaderMenu from './components/HeaderMenu'
+import DemoForm from './components/DemoForm'
 
 export default {
   name: 'app',
   components: {
     Slider,
-    HeaderMenu
+    HeaderMenu,
+    DemoForm
   }
 }
 </script>
@@ -108,7 +111,7 @@ export default {
     width: 300px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 150px;
+    margin-bottom: 60px;
   }
 
   .features-container li {
