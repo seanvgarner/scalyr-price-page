@@ -66,7 +66,7 @@ export default {
   .request-form {
     display: flex;
     flex-direction: column;
-    width: 430px;
+    max-width: 430px;
     margin: 50px auto;
   }
 
